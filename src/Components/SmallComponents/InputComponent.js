@@ -7,11 +7,12 @@ const InputComponent = ({
     type,
     place,
     inputclass,
-    img
+    img,
+    formGroupClass
 }) => {
     return (
         <React.Fragment>
-            <div className="form-group mb-0 text-left">
+            <div className={formGroupClass}>
             <label>{labeltext} </label>
                 <div><img src={img} /></div>        
                 <input name={ name } value={ value }  type={type} className={inputclass} placeholder={place}/>            

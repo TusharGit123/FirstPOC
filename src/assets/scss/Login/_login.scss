@@ -36,4 +36,29 @@
         float: right;
         border-radius: 30px;
     }
+    
+    // img{
+    //     width: vw(38px);
+    //     height: vw(38px);
+    //     position: absolute;
+    //     top: vw(349px);
+    //     left: vw(30px);
+    //     border-radius: vw(30px);
+    // }
+    
 }
+.username-login-form-group{
+    position: relative; 
+
+    img{
+        width: vw(38px);
+        height: vw(38px);
+        position: absolute;
+        top: vw(42px);       
+        left: vw(10px);
+        border-radius: vw(30px);
+    }  
+}
+
+
+
