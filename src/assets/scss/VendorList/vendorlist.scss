@@ -1,0 +1,47 @@
+.table-container{
+    text-align: center;
+
+    .first-row{      
+        background-color:#FF5757; 
+       
+        th{          
+            color: white;
+            width: vw(1638px);
+            height: vw(80px);
+        }
+              
+    }
+
+    .second-row{
+            
+        td{
+            width: vw(1638px);
+            height: vw(80px);
+        }
+    }
+
+    .vendor{
+        font-family: AvenirLTStd-Black;
+        text-align: left;
+        font-size: vw(36px);
+    }
+
+    .vendor-search{
+         display: flex;
+         justify-content: space-between;
+
+         .input-bottomblack--input-search{         
+                background: transparent;
+                margin-left: auto;
+            }    
+    }
+    
+    
+}
+
+
+.search-label{
+    label{
+        display: none;
+    }
+}

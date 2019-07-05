@@ -8,13 +8,14 @@ const InputComponent = ({
     place,
     inputclass,
     img,
-    formGroupClass
+    alt,
+    searchClass
 }) => {
     return (
         <React.Fragment>
-            <div className={formGroupClass}>
+            <div className={`form-group mb-0 text-left username-login-form-group ${searchClass}`}>
             <label>{labeltext} </label>
-                <div><img src={img} /></div>        
+                <div><img src={img} alt={alt}/></div>        
                 <input name={ name } value={ value }  type={type} className={inputclass} placeholder={place}/>            
             </div>
         </React.Fragment>
