@@ -7,12 +7,12 @@ import VendorList from './Components/VendorList/VendorList';
 function App() {
   return (
     <div className="App">
-    <Router>
-      <Switch>      
-        <Route exact path='/login' component={Login}/>
-        <Route exact path='/vendorlist' component={VendorList}/>
-      </Switch>  
-    </Router>     
+      <Router>
+        <Switch>
+          <Route exact path='/login' component={Login} />
+          <Route exact path='/vendorlist' component={VendorList} />
+        </Switch>
+      </Router>
     </div>
   );
 }

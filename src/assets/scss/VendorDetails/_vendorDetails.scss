@@ -1,0 +1,131 @@
+/*========================================================
+
+                vendor details
+
+========================================================*/
+
+.font-36-black {
+    font-size: vw(36px);
+    line-height: vw(43px);
+    font-family: AvenirLTStd-Black, sans-serif, Helvetica;
+}
+
+.font-28-medium {
+    font-size: vw(28px);
+    line-height: vw(34px);
+    font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+}
+
+.font-21-medium {
+    font-size: vw(21px);
+    line-height: vw(25px);
+    font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+
+}
+
+
+.mr-30 {
+    margin-right: vw(30px);
+}
+
+.mb-30 {
+    margin-bottom: vw(30px);
+}
+
+.vendor-details-container {
+    padding-left: vw(141px);
+    padding-right: vw(141px);
+    padding-top: vw(30px);
+    background-color: $color-white;
+    box-shadow: 0 0 vw(20px) 0 rgba(0, 0, 0, 0.05);
+}
+
+.gray-border {
+    display: block;
+    border-bottom: 1px solid $gray-border;
+    margin-top: vw(33px);
+    margin-bottom: vw(20px);
+}
+
+.gray-text-block-p {
+    color: $gray-text;
+    font-size: vw(21px);
+    font-family: AvenirLTStd-Book, sans-serif, Helvetica;
+    line-height: vw(25px);
+    text-transform: capitalize;
+    width: vw(286px);
+    margin-bottom: vw(20px);
+}
+
+.login-button--vendor-details-show {
+    float: unset;
+    background-color: $color-blue;
+    color: $color-white;
+}
+
+.login-button--vendor-details-show-all {
+    float: unset;
+    background-color: $color-white;
+    border: 1px solid $color-black;
+    color: $color-black;
+}
+
+.dark-gray-text {
+    color: $dark-gray-text;
+}
+
+.default-wait-time-block {
+    display: flex;
+    margin-bottom: vw(30px);
+    margin-top: vw(10px);
+
+    span:first-child,
+    span:last-child {
+        &::after {
+            display: none;
+        }
+    }
+
+    span:first-child {
+        color: $color-white;
+        background-color: $color-yellow;
+        border-top-left-radius: vw(40px);
+        border-bottom-left-radius: vw(40px);
+        border-right: 0;
+    }
+
+    span:last-child {
+        border-top-right-radius: vw(40px);
+        border-bottom-right-radius: vw(40px);
+        border-right: 0;
+    }
+
+    span {
+        position: relative;
+        color: $color-black;
+        background-color: $color-light-gray;
+        width: vw(124px);
+        height: vw(80px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::after {
+            content: "";
+            width: 1px;
+            height: 50%;
+            background-color: #707070;
+            position: absolute;
+            right: 0;
+        }
+    }
+}
+
+.table-time-outer-block {
+    display: flex;
+    flex-wrap: wrap;
+
+    div:first-child {
+        margin-right: vw(60px);
+    }
+}

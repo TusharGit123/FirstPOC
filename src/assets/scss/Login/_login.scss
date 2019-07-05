@@ -1,7 +1,7 @@
 /***=========================
     Login Scss
 =========================***/
-.login-align{
+.login-align {
     margin-top: vw(80px);
     padding-top: vw(30px);
     background-color: white;
@@ -9,34 +9,22 @@
     height: vw(675px);
     border-radius: vw(20px);
     box-shadow: 0px 0px 20px #E6E6E6;
-   
-    p{ 
-        font-family: AvenirLTStd-Book;     
+
+    p {
+        font-family: AvenirLTStd-Book;
         padding-bottom: vw(40px);
         border-bottom: 1px solid #E6E6E6;
     }
 
-    .welcome-text{
+    .welcome-text {
         font-family: AvenirLTStd-Black;
     }
 
-    .login-text{
+    .login-text {
         font-family: AvenirLTStd-Black;
-        text-align: left;      
+        text-align: left;
     }
 
-    .login-button{
-        font-family: AvenirLTStd-Medium;
-        // margin-top: vw(30px);
-        width: vw(248px);
-        height: vw(60px);
-        border: none;
-        background-color: #FF5757;
-        color: white;
-        float: right;
-        border-radius: 30px;
-    }
-    
     // img{
     //     width: vw(38px);
     //     height: vw(38px);
@@ -45,20 +33,32 @@
     //     left: vw(30px);
     //     border-radius: vw(30px);
     // }
-    
-}
-.username-login-form-group{
-    position: relative; 
 
-    img{
+}
+
+.username-login-form-group {
+    position: relative;
+
+    img {
         width: vw(38px);
         height: vw(38px);
         position: absolute;
-        top: vw(42px);       
+        top: vw(42px);
         left: vw(10px);
         border-radius: vw(30px);
-    }  
+    }
 }
 
-
-
+.login-button {
+    font-size: vw(21px);
+    font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+    // margin-top: vw(30px);
+    width: vw(248px);
+    height: vw(60px);
+    border: transparent;
+    background-color: #FF5757;
+    color: white;
+    float: right;
+    border-radius: vw(30px);
+    text-transform: capitalize;
+}
