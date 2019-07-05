@@ -1,0 +1,39 @@
+/***=========================
+    Login Scss
+=========================***/
+.login-align{
+    margin-top: vw(80px);
+    padding-top: vw(30px);
+    background-color: white;
+    width: vw(586px);
+    height: vw(675px);
+    border-radius: vw(20px);
+    box-shadow: 0px 0px 20px #E6E6E6;
+   
+    p{ 
+        font-family: AvenirLTStd-Book;     
+        padding-bottom: vw(40px);
+        border-bottom: 1px solid #E6E6E6;
+    }
+
+    .welcome-text{
+        font-family: AvenirLTStd-Black;
+    }
+
+    .login-text{
+        font-family: AvenirLTStd-Black;
+        text-align: left;      
+    }
+
+    .login-button{
+        font-family: AvenirLTStd-Medium;
+        // margin-top: vw(30px);
+        width: vw(248px);
+        height: vw(60px);
+        border: none;
+        background-color: #FF5757;
+        color: white;
+        float: right;
+        border-radius: 30px;
+    }
+}

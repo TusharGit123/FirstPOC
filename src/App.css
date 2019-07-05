@@ -1,33 +1,174 @@
-.App {
-  text-align: center;
+/********************
+    Function Css
+********************/
+/********************
+    Global Css
+********************/
+/***********************************
+            Global Reset             
+***********************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #FAFAFA;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*** input field class ***/
+.input-bottomblack {
+  margin-left: 0;
+  margin-bottom: 1.04167vw;
+  border: 1px solid #CCCCCC;
+  border-radius: 1.5625vw;
+}
+
+/*** Button Classes ***/
+/********************
+    Navigation Css
+********************/
+.main-header {
+  background-color: #FFFFFF;
+  width: 100vw;
+  border-bottom: 1px solid #E6E6E6;
+  -webkit-box-shadow: 0px 3px 6px #E6E6E6;
+          box-shadow: 0px 3px 6px #E6E6E6;
+}
+
+.main-header .divheading {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-header .divheading h4 {
+  margin-left: 7.34375vw;
+  font-family: AvenirLTStd-Black;
+  font-weight: bold;
+  font-size: 1.45833vw;
+  color: #000000;
+}
+
+/********************
+    Typography Css
+********************/
+@font-face {
+  font-family: AvenirLTStd-Black;
+  src: url("./assets/fonts/AvenirLTStd-Black.otf");
+}
+
+@font-face {
+  font-family: AvenirLTStd-BlackOblique;
+  src: url("./assets/fonts/AvenirLTStd-BlackOblique.otf");
+}
+
+@font-face {
+  font-family: AvenirLTStd-Book;
+  src: url("./assets/fonts/AvenirLTStd-Book.otf");
+}
+
+@font-face {
+  font-family: AvenirLTStd-BookOblique;
+  src: url("./assets/fonts/AvenirLTStd-BookOblique.otf");
+}
+
+@font-face {
+  font-family: AvenirLTStd-Heavy;
+  src: url("./assets/fonts/AvenirLTStd-Heavy.otf");
+}
+
+@font-face {
+  font-family: AvenirLTStd-HeavyOblique;
+  src: url("./assets/fonts/AvenirLTStd-HeavyOblique.otf");
+}
+
+@font-face {
+  font-family: AvenirLTStd-Light;
+  src: url("./assets/fonts/AvenirLTStd-Light.otf");
+}
+
+@font-face {
+  font-family: AvenirLTStd-LightOblique;
+  src: url("./assets/fonts/AvenirLTStd-LightOblique.otf");
+}
+
+@font-face {
+  font-family: AvenirLTStd-Medium;
+  src: url("./assets/fonts/AvenirLTStd-Medium.otf");
+}
+
+@font-face {
+  font-family: AvenirLTStd-MediumOblique;
+  src: url("./assets/fonts/AvenirLTStd-MediumOblique.otf");
+}
+
+@font-face {
+  font-family: AvenirLTStd-Oblique;
+  src: url("./assets/fonts/AvenirLTStd-Oblique.otf");
+}
+
+@font-face {
+  font-family: AvenirLTStd-Roman;
+  src: url("./assets/fonts/AvenirLTStd-Roman.otf");
+}
+
+/***=========================
+    Login Scss
+=========================***/
+.login-align {
+  margin-top: 4.16667vw;
+  padding-top: 1.5625vw;
+  background-color: white;
+  width: 30.52083vw;
+  height: 35.15625vw;
+  border-radius: 1.04167vw;
+  -webkit-box-shadow: 0px 0px 20px #E6E6E6;
+          box-shadow: 0px 0px 20px #E6E6E6;
+}
+
+.login-align p {
+  font-family: AvenirLTStd-Book;
+  padding-bottom: 2.08333vw;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.login-align .welcome-text {
+  font-family: AvenirLTStd-Black;
+}
+
+.login-align .login-text {
+  font-family: AvenirLTStd-Black;
+  text-align: left;
+}
+
+.login-align .login-button {
+  font-family: AvenirLTStd-Medium;
+  width: 12.91667vw;
+  height: 3.125vw;
+  border: none;
+  background-color: #FF5757;
   color: white;
+  float: right;
+  border-radius: 30px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */
