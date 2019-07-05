@@ -16,8 +16,7 @@ export class VendorList extends Component {
                          searchClass={'search-label'} 
                          place={'search'} 
                          inputclass={ 'form-control input-bottomblack input-search'}/>
-                    </div> 
-                                
+                    </div>                                
                 </div>                     
                 <div className="row">
                     <div className="col">
