@@ -1,0 +1,43 @@
+.table-container {
+  text-align: center;
+}
+
+.table-container .first-row {
+  background-color: #FF5757;
+}
+
+.table-container .first-row th {
+  color: white;
+  width: vw(1638px);
+  height: vw(80px);
+}
+
+.table-container .second-row td {
+  width: vw(1638px);
+  height: vw(80px);
+}
+
+.table-container .vendor {
+  font-family: AvenirLTStd-Black;
+  text-align: left;
+  font-size: vw(36px);
+}
+
+.table-container .vendor-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.table-container .vendor-search .input-bottomblack--input-search {
+  background: transparent;
+  margin-left: auto;
+}
+
+.search-label label {
+  display: none;
+}
+/*# sourceMappingURL=vendorlist.css.map */

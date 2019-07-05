@@ -6,7 +6,7 @@ const LargeText = ({
 }) => {
     return (
         <React.Fragment>
-            <div className="col-12 my-3">
+            <div className="col-12 my-3 px-0">
              <h4 className={largetextclass}>{largetext}</h4>
             </div>           
         </React.Fragment>

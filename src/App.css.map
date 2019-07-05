@@ -7,7 +7,8 @@
         "assets/scss/_global.scss",
         "assets/scss/_navigation.scss",
         "assets/scss/_typography.scss",
-        "assets/scss/Login/_login.scss"
+        "assets/scss/Login/_login.scss",
+        "assets/scss/VendorList/vendorlist.scss"
     ],
     "names": [],
     "file": "App.css"

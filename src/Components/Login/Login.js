@@ -7,6 +7,7 @@ import Largetext from '../SmallComponents/LargeText';
 
 
 export class Login extends Component {
+
     render() {
         return (
           <React.Fragment>
@@ -18,16 +19,17 @@ export class Login extends Component {
                         <Largetext largetext={'Welcome!'} largetextclass={'welcome-text'}/>
                         <p>It's nice to see you again!<br/>Login to continue to your account</p> 
                         <Largetext largetext={'Login'} largetextclass={'login-text'}/>                    
-                        <InputComponent img={require("./../../assets/Images/usernamepic.svg")} 
-                        formGroupClass="form-group mb-0 text-left username-login-form-group"
+                        <InputComponent
+                        img={require("./../../assets/Images/usernamepic.svg")}  
+                        alt={'username'}                       
                         labeltext={'Username'} 
                         name={'Username'} 
                         type={"Username"} 
                         place={"eg. James Bond"} 
                         inputclass={ 'form-control input-bottomblack ' }/>
                         <InputComponent
-                         img={require("./../../assets/Images/passwordpic.svg")}
-                         formGroupClass="form-group mb-0 text-left username-login-form-group"
+                         img={require("./../../assets/Images/passwordpic.svg")}  
+                         alt={'password'}                       
                          labeltext={'Password'}
                           name={'password'} 
                           type={"password"} 
