@@ -13,9 +13,9 @@ const InputComponent = ({
     return (
         <React.Fragment>
             <div className={formGroupClass}>
-            <label>{labeltext} </label>
-                <div><img src={img} /></div>        
-                <input name={ name } value={ value }  type={type} className={inputclass} placeholder={place}/>            
+                <label>{labeltext} </label>
+                <div><img src={img} /></div>
+                <input name={name} value={value} type={type} className={inputclass} placeholder={place} />
             </div>
         </React.Fragment>
     )

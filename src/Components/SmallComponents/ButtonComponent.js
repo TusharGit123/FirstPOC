@@ -4,13 +4,18 @@ const ButtonComponent = ({
     buttontype,
     buttonclass,
     buttontext,
-
+    handleOnClick
 }) => {
     return (
-          <React.Fragment>
-                 <button  type={buttontype} className={buttonclass} >{buttontext}</button>         
-          </React.Fragment>
+        <React.Fragment>
+            <button
+                type={buttontype}
+                className={buttonclass}
+                onClick={handleOnClick}>
+                {buttontext}
+            </button>
+        </React.Fragment>
     )
 }
 
-export default ButtonComponent
+export default ButtonComponent;
