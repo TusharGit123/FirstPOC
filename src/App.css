@@ -36,6 +36,22 @@ body {
   border-radius: 1.5625vw;
 }
 
+.input-bottomblack::-webkit-input-placeholder {
+  padding-left: 2.08333vw;
+}
+
+.input-bottomblack:-ms-input-placeholder {
+  padding-left: 2.08333vw;
+}
+
+.input-bottomblack::-ms-input-placeholder {
+  padding-left: 2.08333vw;
+}
+
+.input-bottomblack::placeholder {
+  padding-left: 2.08333vw;
+}
+
 /*** Button Classes ***/
 /********************
     Navigation Css
@@ -170,5 +186,18 @@ body {
   color: white;
   float: right;
   border-radius: 30px;
+}
+
+.username-login-form-group {
+  position: relative;
+}
+
+.username-login-form-group img {
+  width: 1.97917vw;
+  height: 1.97917vw;
+  position: absolute;
+  top: 2.1875vw;
+  left: 0.52083vw;
+  border-radius: 1.5625vw;
 }
 /*# sourceMappingURL=App.css.map */

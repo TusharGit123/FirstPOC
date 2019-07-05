@@ -32,6 +32,10 @@ body{
     margin-bottom:vw(20px);
     border: 1px solid #CCCCCC;
     border-radius: vw(30px);
+    
+}
+.input-bottomblack::placeholder{
+    padding-left: vw(40px);
 }
 
 /*** Button Classes ***/
