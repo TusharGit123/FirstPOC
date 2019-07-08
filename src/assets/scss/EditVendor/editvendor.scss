@@ -1,0 +1,45 @@
+/*========================================================
+
+                Edit Vendor scss
+
+========================================================*/
+
+
+.edit-vendor-align{
+    margin-top: vw(80px);
+
+    .editvendor-text{
+        font-family: AvenirLTStd-Black, sans-serif, Helvetica;
+        text-align: left;
+        padding-bottom: vw(20px);
+        border-bottom: 1px solid #CCCCCC;
+    }
+
+    .cancel-button{
+        font-size: vw(21px);
+        font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+        width: vw(240px);
+        height: vw(60px);
+        border: 1px solid #FF5757;
+        background-color: white;
+        color: #FF5757;
+        float: right;
+        border-radius: vw(30px);
+        text-transform: capitalize;
+    }
+    
+}
+
+    .save-button{
+        font-size: vw(21px);
+        font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+        margin-top: vw(110px);
+        width: vw(240px);
+        height: vw(60px);
+        border: transparent;
+        background-color: #FF5757;
+        color: white;
+        float: left;
+        border-radius: vw(30px);
+        text-transform: capitalize;
+    }

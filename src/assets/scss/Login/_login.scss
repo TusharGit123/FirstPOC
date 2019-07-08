@@ -17,11 +17,11 @@
     }
 
     .welcome-text {
-        font-family: AvenirLTStd-Black;
+        font-family: AvenirLTStd-Black, sans-serif, Helvetica;
     }
 
     .login-text {
-        font-family: AvenirLTStd-Black;
+        font-family: AvenirLTStd-Black, sans-serif, Helvetica;
         text-align: left;
     }
 
@@ -53,7 +53,7 @@
     font-size: vw(21px);
     font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
     // margin-top: vw(30px);
-    width: vw(248px);
+    width: vw(240px);
     height: vw(60px);
     border: transparent;
     background-color: #FF5757;

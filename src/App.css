@@ -1,31 +1,106 @@
+/*========================================================
+
+                    variables
+
+========================================================*/
 /********************
-    Function Css
+    Function scss
 ********************/
 /********************
-    Global Css
+    Global scss
 ********************/
 /***********************************
             Global Reset             
 ***********************************/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: #FAFAFA;
+  background-color: #FCFCFC;
+  color: #000000;
+  font-family: AvenirLTStd-Book, sans-serif, Helvetica;
 }
 
 /*** input field class ***/
@@ -53,15 +128,22 @@ body {
 }
 
 /*** Button Classes ***/
+button {
+  border: transparent;
+}
+
+button:focus {
+  outline: 0;
+}
+
 /********************
     Navigation Css
 ********************/
 .main-header {
   background-color: #FFFFFF;
   width: 100vw;
-  border-bottom: 1px solid #E6E6E6;
-  -webkit-box-shadow: 0px 3px 6px #E6E6E6;
-          box-shadow: 0px 3px 6px #E6E6E6;
+  -webkit-box-shadow: 0 0.15625vw 0.3125vw 0 #E6E6E6;
+          box-shadow: 0 0.15625vw 0.3125vw 0 #E6E6E6;
 }
 
 .main-header .divheading {
@@ -79,14 +161,14 @@ body {
 
 .main-header .divheading h4 {
   margin-left: 7.34375vw;
-  font-family: AvenirLTStd-Black;
+  font-family: AvenirLTStd-Black, sans-serif, Helvetica;
   font-weight: bold;
   font-size: 1.45833vw;
   color: #000000;
 }
 
 /********************
-    Typography Css
+    Typography scss
 ********************/
 @font-face {
   font-family: AvenirLTStd-Black;
@@ -169,23 +251,12 @@ body {
 }
 
 .login-align .welcome-text {
-  font-family: AvenirLTStd-Black;
+  font-family: AvenirLTStd-Black, sans-serif, Helvetica;
 }
 
 .login-align .login-text {
-  font-family: AvenirLTStd-Black;
+  font-family: AvenirLTStd-Black, sans-serif, Helvetica;
   text-align: left;
-}
-
-.login-align .login-button {
-  font-family: AvenirLTStd-Medium;
-  width: 12.91667vw;
-  height: 3.125vw;
-  border: none;
-  background-color: #FF5757;
-  color: white;
-  float: right;
-  border-radius: 30px;
 }
 
 .username-login-form-group {
@@ -199,5 +270,304 @@ body {
   top: 2.1875vw;
   left: 0.52083vw;
   border-radius: 1.5625vw;
+}
+
+.login-button {
+  font-size: 1.09375vw;
+  font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+  width: 12.5vw;
+  height: 3.125vw;
+  border: transparent;
+  background-color: #FF5757;
+  color: white;
+  float: right;
+  border-radius: 1.5625vw;
+  text-transform: capitalize;
+}
+
+/*========================================================
+
+                vendor details
+
+========================================================*/
+.font-36-black {
+  font-size: 1.875vw;
+  line-height: 2.23958vw;
+  font-family: AvenirLTStd-Black, sans-serif, Helvetica;
+}
+
+.font-28-medium {
+  font-size: 1.45833vw;
+  line-height: 1.77083vw;
+  font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+}
+
+.font-21-medium {
+  font-size: 1.09375vw;
+  line-height: 1.30208vw;
+  font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+}
+
+.mr-30 {
+  margin-right: 1.5625vw;
+}
+
+.mb-30 {
+  margin-bottom: 1.5625vw;
+}
+
+.vendor-details-container {
+  padding-left: 7.34375vw;
+  padding-right: 7.34375vw;
+  padding-top: 1.5625vw;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 1.04167vw 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 1.04167vw 0 rgba(0, 0, 0, 0.05);
+}
+
+.gray-border {
+  display: block;
+  border-bottom: 1px solid #E6E6E6;
+  margin-top: 1.71875vw;
+  margin-bottom: 1.04167vw;
+}
+
+.gray-text-block-p {
+  color: #CCCCCC;
+  font-size: 1.09375vw;
+  font-family: AvenirLTStd-Book, sans-serif, Helvetica;
+  line-height: 1.30208vw;
+  text-transform: capitalize;
+  width: 14.89583vw;
+  margin-bottom: 1.04167vw;
+}
+
+.login-button--vendor-details-show {
+  float: unset;
+  background-color: #57B6FF;
+  color: #FFFFFF;
+}
+
+.login-button--vendor-details-show-all {
+  float: unset;
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+.dark-gray-text {
+  color: #808080;
+}
+
+.default-wait-time-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.5625vw;
+  margin-top: 0.52083vw;
+}
+
+.default-wait-time-block span:first-child::after,
+.default-wait-time-block span:last-child::after {
+  display: none;
+}
+
+.default-wait-time-block span:first-child {
+  color: #FFFFFF;
+  background-color: #FFCF60;
+  border-top-left-radius: 2.08333vw;
+  border-bottom-left-radius: 2.08333vw;
+  border-right: 0;
+}
+
+.default-wait-time-block span:last-child {
+  border-top-right-radius: 2.08333vw;
+  border-bottom-right-radius: 2.08333vw;
+  border-right: 0;
+}
+
+.default-wait-time-block span {
+  position: relative;
+  color: #000000;
+  background-color: #FAFAFA;
+  width: 6.45833vw;
+  height: 4.16667vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.default-wait-time-block span::after {
+  content: "";
+  width: 1px;
+  height: 50%;
+  background-color: #707070;
+  position: absolute;
+  right: 0;
+}
+
+.table-time-outer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.table-time-outer-block div:first-child {
+  margin-right: 3.125vw;
+}
+
+/*========================================================
+
+                Vendor List scss
+
+========================================================*/
+.table-container {
+  text-align: center;
+}
+
+.table-container .first-row {
+  background-color: #FF5757;
+}
+
+.table-container .first-row th {
+  font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+  font-size: 1.09375vw;
+  color: white;
+  width: 85.3125vw;
+  height: 4.16667vw;
+}
+
+.table-container .first-row th:first-child {
+  border-radius: 5px 0px 0px 0px;
+}
+
+.table-container .first-row th:last-child {
+  border-radius: 0px 5px 0px 0px;
+}
+
+.table-container .second-row td {
+  font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+  background-color: #FAFAFA;
+  font-size: 1.09375vw;
+  width: 85.3125vw;
+  height: 4.16667vw;
+}
+
+.table-container .second-row img {
+  position: absolute;
+}
+
+.table-container .vendor {
+  font-family: AvenirLTStd-Black, sans-serif, Helvetica;
+  text-align: left;
+  font-size: 1.875vw;
+}
+
+.table-container .vendor-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.table-container .vendor-search .input-bottomblack--input-search {
+  background: transparent;
+  margin-left: auto;
+}
+
+.table-container .vendor-search img {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: 7px;
+  left: 165px;
+}
+
+.search-label label {
+  display: none;
+}
+
+/*========================================================
+
+                 Add Vendor scss
+
+========================================================*/
+.add-vendor-align {
+  margin-top: 4.16667vw;
+  padding-top: 1.5625vw;
+}
+
+.add-vendor-align .addvendor-text {
+  font-family: AvenirLTStd-Black, sans-serif, Helvetica;
+  text-align: left;
+  padding-bottom: 1.04167vw;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.add-vendor-align .cancel-button {
+  font-size: 1.09375vw;
+  font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+  width: 12.5vw;
+  height: 3.125vw;
+  border: 1px solid #FF5757;
+  background-color: white;
+  color: #FF5757;
+  float: left;
+  border-radius: 1.5625vw;
+  text-transform: capitalize;
+}
+
+/*========================================================
+
+                Edit Vendor scss
+
+========================================================*/
+.edit-vendor-align {
+  margin-top: 4.16667vw;
+}
+
+.edit-vendor-align .editvendor-text {
+  font-family: AvenirLTStd-Black, sans-serif, Helvetica;
+  text-align: left;
+  padding-bottom: 1.04167vw;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.edit-vendor-align .cancel-button {
+  font-size: 1.09375vw;
+  font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+  width: 12.5vw;
+  height: 3.125vw;
+  border: 1px solid #FF5757;
+  background-color: white;
+  color: #FF5757;
+  float: right;
+  border-radius: 1.5625vw;
+  text-transform: capitalize;
+}
+
+.save-button {
+  font-size: 1.09375vw;
+  font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+  margin-top: 5.72917vw;
+  width: 12.5vw;
+  height: 3.125vw;
+  border: transparent;
+  background-color: #FF5757;
+  color: white;
+  float: left;
+  border-radius: 1.5625vw;
+  text-transform: capitalize;
 }
 /*# sourceMappingURL=App.css.map */

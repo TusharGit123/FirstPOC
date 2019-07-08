@@ -1,0 +1,29 @@
+/*========================================================
+
+                 Add Vendor scss
+
+========================================================*/
+
+.add-vendor-align {
+    margin-top: vw(80px);
+    padding-top: vw(30px);
+
+    .addvendor-text{
+        font-family: AvenirLTStd-Black, sans-serif, Helvetica;
+        text-align: left;
+        padding-bottom: vw(20px);
+        border-bottom: 1px solid #CCCCCC;
+    }
+    .cancel-button{
+        font-size: vw(21px);
+        font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+        width: vw(240px);
+        height: vw(60px);
+        border: 1px solid #FF5757;
+        background-color: white;
+        color: #FF5757;
+        float: left;
+        border-radius: vw(30px);
+        text-transform: capitalize;
+    }
+}

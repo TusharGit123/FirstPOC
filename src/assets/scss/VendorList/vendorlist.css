@@ -1,3 +1,8 @@
+/*========================================================
+
+                Vendor List scss
+
+========================================================*/
 .table-container {
   text-align: center;
 }
@@ -7,18 +12,35 @@
 }
 
 .table-container .first-row th {
+  font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+  font-size: vw(21px);
   color: white;
   width: vw(1638px);
   height: vw(80px);
 }
 
+.table-container .first-row th:first-child {
+  border-radius: 5px 0px 0px 0px;
+}
+
+.table-container .first-row th:last-child {
+  border-radius: 0px 5px 0px 0px;
+}
+
 .table-container .second-row td {
+  font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+  background-color: #FAFAFA;
+  font-size: vw(21px);
   width: vw(1638px);
   height: vw(80px);
 }
 
+.table-container .second-row img {
+  position: absolute;
+}
+
 .table-container .vendor {
-  font-family: AvenirLTStd-Black;
+  font-family: AvenirLTStd-Black, sans-serif, Helvetica;
   text-align: left;
   font-size: vw(36px);
 }
@@ -35,6 +57,15 @@
 .table-container .vendor-search .input-bottomblack--input-search {
   background: transparent;
   margin-left: auto;
+}
+
+.table-container .username-login-form-group img {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: 7px;
+  left: 165px;
 }
 
 .search-label label {

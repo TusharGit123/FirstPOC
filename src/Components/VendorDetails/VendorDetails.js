@@ -3,6 +3,7 @@ import HeaderComponent from '../Header/HeaderComponent';
 import ButtonComponent from '../SmallComponents/ButtonComponent';
 import DefaultWaitTime from './DefaultWaitTime';
 
+
 class VendorDetails extends Component {
 
     handleShowAll = () => {
@@ -60,7 +61,6 @@ class VendorDetails extends Component {
                                     />
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
