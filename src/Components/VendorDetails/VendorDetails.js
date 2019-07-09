@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import HeaderComponent from '../Header/HeaderComponent';
 import ButtonComponent from '../SmallComponents/ButtonComponent';
+import InputComponent from '../SmallComponents/InputComponent';
 import DefaultWaitTime from './DefaultWaitTime';
 import VendorTableHeadRow from '../VendorDetails/VendorTableHeadRow';
 import VendorTableHeadSubRow from '../VendorDetails/VendorTableHeadSubRow';
@@ -66,13 +67,26 @@ class VendorDetails extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="container vendordetail-table-container">
+                <div className="container table-container pl-0">
+                <div className="col-12 vendor-search my-3 px-0 d-flex justify-content-between align-items-center">
+                    <div><h4 className={'vendor'}>All Vendors</h4></div>
+
+                    <div className="d-flex justify-content-between w-25">
+
+                        <InputComponent 
+                        img={require("./../../assets/Images/search.svg")} 
+                        searchClass={'search-label'} 
+                        place={'search'} 
+                        inputclass={ 'form-control input-bottomblack mb-0 pl-3 input-search'}/>
+                        <img src={require("./../../assets/Images/sort-button-with-three-lines.svg")} alt="sort-button-with-three-lines"/>
+                        <img src={require("./../../assets/Images/filter.svg")} alt="filter-img"/>  
+
+                    </div>
+                </div>                    
                     <div className="row">
-                        <div className="col">
+                        <div className="col p-0 vendordetail-col">
                             <table>
-                                <tbody>
-                                   
-            
+                                <tbody>         
                                         <VendorTableHeadRow
                                         no={'sr. No'}
                                         Name={'Name'}
@@ -92,12 +106,14 @@ class VendorDetails extends Component {
                                         no={'102'}
                                         Name={'Akhil'}
                                         Phone={'+911234567890'}
+                                        Img1={require("./../../assets/Images/envelope-img.svg")}                                      
                                         Img={require("./../../assets/Images/walking-img.svg")}
                                         Adults={'2'}
                                         Kids={'0'}
                                         Total={'2'}
                                         Occassion={'Wedding'}
                                         WaitTime={'25'}
+                                        Img2={require("./../../assets/Images/penimg.svg")} 
                                         Timer={'10:00'}
                                         Status={'Not Seated'}/>          
                                 </tbody>

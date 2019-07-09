@@ -5,7 +5,7 @@ const DefaultWaitTime = ({
 }) => {
 
     const divElement = arrayNumber.map((number, index) =>
-        <span key={index} className="font-28-medium">
+        <span key={index} className="font-21-medium">
             {number}
         </span>
     );

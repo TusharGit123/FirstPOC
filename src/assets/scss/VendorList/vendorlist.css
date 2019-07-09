@@ -19,11 +19,11 @@
   height: vw(80px);
 }
 
-.table-container .first-row th:first-child {
+.table-container .first-row tr:first-child {
   border-radius: 5px 0px 0px 0px;
 }
 
-.table-container .first-row th:last-child {
+.table-container .first-row tr:last-child {
   border-radius: 0px 5px 0px 0px;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .table-container .second-row img {
-  position: absolute;
+  padding-left: 8px;
 }
 
 .table-container .vendor {

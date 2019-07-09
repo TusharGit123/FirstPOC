@@ -18,109 +18,111 @@ export class VendorList extends Component {
                         img={require("./../../assets/Images/search.svg")} 
                         searchClass={'search-label'} 
                         place={'search'} 
-                        inputclass={ 'form-control input-bottomblack mb-0 input-search'}/>
+                        inputclass={ 'form-control input-bottomblack mb-0 pl-3 input-search'}/>
                         <img src={require("./../../assets/Images/sort-button-with-three-lines.svg")} alt="sort-button-with-three-lines"/>
                         <img src={require("./../../assets/Images/filter.svg")} alt="filter-img"/>  
 
                     </div>
                 </div>                    
                 <div className="row">
-                    <div className="col">
-                        <table>
-                            <tbody>                          
-                                <tr className="first-row">                                  
-                                        <th>sr. No.</th>
-                                        <th>Vendor Name</th>
-                                        <th>Username</th>
-                                        <th>Password</th>
-                                        <th>Total Seated</th>
-                                        <th>Total Non-Seated</th>
-                                        <th>Total People</th>      
-                                        <th></th>                             
-                                </tr>
+                    <div className="col p-0 vendordetail-col">
+                        <div>
+                            <table>
+                                <tbody>                          
+                                    <tr className="first-row">                                  
+                                            <th>sr. No.</th>
+                                            <th>Vendor Name</th>
+                                            <th>Username</th>
+                                            <th>Password</th>
+                                            <th>Total Seated</th>
+                                            <th>Total Non-Seated</th>
+                                            <th>Total People</th>      
+                                            <th></th>                             
+                                    </tr>
 
-                               <VendorTableRow
-                               no={'102'}
-                               vendorName={'Akhil'}
-                               venderUser={'Akhil123'}
-                               vendorPassword={'Akhil123'}
-                               totalSeated={'25'}
-                               totalNonSeated={'25'}
-                               totalPeople={'25'}
-                               img={require("./../../assets/Images/penimg.svg")}/>
+                                <VendorTableRow
+                                no={'102'}
+                                vendorName={'Akhil'}
+                                venderUser={'Akhil123'}
+                                vendorPassword={'Akhil123'}
+                                totalSeated={'25'}
+                                totalNonSeated={'25'}
+                                totalPeople={'25'}
+                                img={require("./../../assets/Images/penimg.svg")}/>
 
-                               <VendorTableRow
-                               no={'102'}
-                               vendorName={'Akhil'}
-                               venderUser={'Akhil123'}
-                               vendorPassword={'Akhil123'}
-                               totalSeated={'25'}
-                               totalNonSeated={'25'}
-                               totalPeople={'25'}
-                               img={require("./../../assets/Images/penimg.svg")}/>
+                                <VendorTableRow
+                                no={'102'}
+                                vendorName={'Akhil'}
+                                venderUser={'Akhil123'}
+                                vendorPassword={'Akhil123'}
+                                totalSeated={'25'}
+                                totalNonSeated={'25'}
+                                totalPeople={'25'}
+                                img={require("./../../assets/Images/penimg.svg")}/>
 
-                               <VendorTableRow
-                               no={'102'}
-                               vendorName={'Akhil'}
-                               venderUser={'Akhil123'}
-                               vendorPassword={'Akhil123'}
-                               totalSeated={'25'}
-                               totalNonSeated={'25'}
-                               totalPeople={'25'}
-                               img={require("./../../assets/Images/penimg.svg")}/>
+                                <VendorTableRow
+                                no={'102'}
+                                vendorName={'Akhil'}
+                                venderUser={'Akhil123'}
+                                vendorPassword={'Akhil123'}
+                                totalSeated={'25'}
+                                totalNonSeated={'25'}
+                                totalPeople={'25'}
+                                img={require("./../../assets/Images/penimg.svg")}/>
 
-                               <VendorTableRow
-                               no={'102'}
-                               vendorName={'Akhil'}
-                               venderUser={'Akhil123'}
-                               vendorPassword={'Akhil123'}
-                               totalSeated={'25'}
-                               totalNonSeated={'25'}
-                               totalPeople={'25'}
-                               img={require("./../../assets/Images/penimg.svg")}/>
+                                <VendorTableRow
+                                no={'102'}
+                                vendorName={'Akhil'}
+                                venderUser={'Akhil123'}
+                                vendorPassword={'Akhil123'}
+                                totalSeated={'25'}
+                                totalNonSeated={'25'}
+                                totalPeople={'25'}
+                                img={require("./../../assets/Images/penimg.svg")}/>
 
-                               <VendorTableRow
-                               no={'102'}
-                               vendorName={'Akhil'}
-                               venderUser={'Akhil123'}
-                               vendorPassword={'Akhil123'}
-                               totalSeated={'25'}
-                               totalNonSeated={'25'}
-                               totalPeople={'25'}
-                               img={require("./../../assets/Images/penimg.svg")}/>
+                                <VendorTableRow
+                                no={'102'}
+                                vendorName={'Akhil'}
+                                venderUser={'Akhil123'}
+                                vendorPassword={'Akhil123'}
+                                totalSeated={'25'}
+                                totalNonSeated={'25'}
+                                totalPeople={'25'}
+                                img={require("./../../assets/Images/penimg.svg")}/>
 
-                               <VendorTableRow
-                               no={'102'}
-                               vendorName={'Akhil'}
-                               venderUser={'Akhil123'}
-                               vendorPassword={'Akhil123'}
-                               totalSeated={'25'}
-                               totalNonSeated={'25'}
-                               totalPeople={'25'}
-                               img={require("./../../assets/Images/penimg.svg")}/>
+                                <VendorTableRow
+                                no={'102'}
+                                vendorName={'Akhil'}
+                                venderUser={'Akhil123'}
+                                vendorPassword={'Akhil123'}
+                                totalSeated={'25'}
+                                totalNonSeated={'25'}
+                                totalPeople={'25'}
+                                img={require("./../../assets/Images/penimg.svg")}/>
 
-                               <VendorTableRow
-                               no={'102'}
-                               vendorName={'Akhil'}
-                               venderUser={'Akhil123'}
-                               vendorPassword={'Akhil123'}
-                               totalSeated={'25'}
-                               totalNonSeated={'25'}
-                               totalPeople={'25'}
-                               img={require("./../../assets/Images/penimg.svg")}/>
+                                <VendorTableRow
+                                no={'102'}
+                                vendorName={'Akhil'}
+                                venderUser={'Akhil123'}
+                                vendorPassword={'Akhil123'}
+                                totalSeated={'25'}
+                                totalNonSeated={'25'}
+                                totalPeople={'25'}
+                                img={require("./../../assets/Images/penimg.svg")}/>
 
-                               <VendorTableRow
-                               no={'102'}
-                               vendorName={'Akhil'}
-                               venderUser={'Akhil123'}
-                               vendorPassword={'Akhil123'}
-                               totalSeated={'25'}
-                               totalNonSeated={'25'}
-                               totalPeople={'25'}
-                               img={require("./../../assets/Images/penimg.svg")}/>
-                                                              
-                            </tbody>                 
-                        </table>
+                                <VendorTableRow
+                                no={'102'}
+                                vendorName={'Akhil'}
+                                venderUser={'Akhil123'}
+                                vendorPassword={'Akhil123'}
+                                totalSeated={'25'}
+                                totalNonSeated={'25'}
+                                totalPeople={'25'}
+                                img={require("./../../assets/Images/penimg.svg")}/>
+
+                                </tbody>                 
+                            </table>
+                        </div>
                     </div>
                 </div>              
            </div>
