@@ -129,3 +129,29 @@
         margin-right: vw(60px);
     }
 }
+.vendordetail-table-container{
+    text-align: center;
+
+    .first-row{
+        background-color:#FF5757;  
+        
+        th{  
+            font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+            font-size: vw(21px);        
+            color: white;
+            width: vw(1638px);
+            height: vw(80px);
+        }
+    }
+    
+    .second-row{   
+        //  box-shadow: 0px 0px 20px #FAFAFA;       
+        td{
+            font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+            background-color: #FAFAFA;
+            font-size: vw(21px);        
+            width: vw(1638px);
+            height: vw(80px);
+        }
+    }
+}

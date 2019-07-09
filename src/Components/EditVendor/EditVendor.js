@@ -3,6 +3,7 @@ import HeaderComponent from '../Header/HeaderComponent';
 import LargeText from '../SmallComponents/LargeText';
 import InputComponent from '../SmallComponents/InputComponent';
 import ButtonComponent from '../SmallComponents/ButtonComponent';
+import TextBoxComponent from '../SmallComponents/TextBoxComponent';
 
 export class EditVendor extends Component {
 
@@ -13,7 +14,7 @@ export class EditVendor extends Component {
     render() {
         return (
            <React.Fragment>
-           <HeaderComponent headertext={'Logo'}/>
+           <HeaderComponent headertext={'Logo'} vendorDashboard={true} addVendorBtn={false} editVendorbtn={false}/>
            <div className="container edit-vendor-align text-center">
                <div className="row">
                   <div className="col-sm-2"></div>
@@ -51,14 +52,13 @@ export class EditVendor extends Component {
                             place={"eg. 123567890"} 
                             inputclass={ 'form-control input-bottomblack ' }/>
                             
-                            <InputComponent
-                            img={require("./../../assets/Images/location-img.svg")}  
-                            alt={'Address-img'}                       
-                            labeltext={'Address'} 
-                            name={'Username'} 
-                            type={"Username"} 
-                            place={"eg. Riverdale"} 
-                            inputclass={ 'form-control input-bottomblack ' }/>
+                            <TextBoxComponent
+                            img={require("./../../assets/Images/location-img.svg")}
+                            name={'Address'} 
+                            type={"Username"}
+                            labeltext={'Address'}
+                            place={"eg. Riverdale"}
+                            Textareaclass={ 'form-control textarea-bottomblack ' } />
 
                             <ButtonComponent 
                             buttontype={'button'} 

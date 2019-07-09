@@ -98,6 +98,7 @@ body {
 /*** input field class ***/
 
 .input-bottomblack {
+    padding-left: vw(55px);
     margin-left: 0;
     margin-bottom: vw(20px);
     border: 1px solid #CCCCCC;
@@ -105,9 +106,6 @@ body {
 
 }
 
-.input-bottomblack::placeholder {
-    padding-left: vw(40px);
-}
 
 
 /*** Button Classes ***/
@@ -118,4 +116,13 @@ button {
     &:focus {
         outline: 0;
     }
+}
+
+/*** Textarea class ***/
+.textarea-bottomblack{
+    padding-left: vw(55px);
+    margin-left: 0;
+    margin-bottom: vw(20px);
+    border: 1px solid #CCCCCC;
+    border-radius: vw(30px);
 }

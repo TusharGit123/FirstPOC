@@ -3,6 +3,7 @@ import HeaderComponent from '../Header/HeaderComponent';
 import LargeText from '../SmallComponents/LargeText';
 import InputComponent from '../SmallComponents/InputComponent';
 import ButtonComponent from '../SmallComponents/ButtonComponent';
+import TextBoxComponent from '../SmallComponents/TextBoxComponent';
 
 
 
@@ -15,7 +16,7 @@ export class AddVendor extends Component {
     render() {
         return (
            <React.Fragment>
-            <HeaderComponent headertext={'Logo'}/>
+            <HeaderComponent headertext={'Logo'} vendorDashboard={true} addVendorBtn={false}/>
             <div className="container text-center">
             <div className="row">
                 <div className="col-md-4"></div>
@@ -52,16 +53,15 @@ export class AddVendor extends Component {
                         type={"Number"} 
                         place={"eg. 123567890"} 
                         inputclass={ 'form-control input-bottomblack ' }/>
-                        
-                <InputComponent
-                        img={require("./../../assets/Images/location-img.svg")}  
-                        alt={'Address-img'}                       
-                        labeltext={'Address'} 
-                        name={'Username'} 
-                        type={"Username"} 
-                        place={"eg. Riverdale"} 
-                        inputclass={ 'form-control input-bottomblack ' }/>
 
+                        <TextBoxComponent
+                        img={require("./../../assets/Images/location-img.svg")}
+                        name={'Address'} 
+                        type={"Username"}
+                        labeltext={'Address'}
+                        place={"eg. Riverdale"}
+                        Textareaclass={ 'form-control textarea-bottomblack ' } />
+                        
                         <ButtonComponent 
                         buttontype={'button'} 
                         buttonclass={'login-button'}

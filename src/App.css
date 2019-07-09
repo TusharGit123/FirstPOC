@@ -105,26 +105,11 @@ body {
 
 /*** input field class ***/
 .input-bottomblack {
+  padding-left: 2.86458vw;
   margin-left: 0;
   margin-bottom: 1.04167vw;
   border: 1px solid #CCCCCC;
   border-radius: 1.5625vw;
-}
-
-.input-bottomblack::-webkit-input-placeholder {
-  padding-left: 2.08333vw;
-}
-
-.input-bottomblack:-ms-input-placeholder {
-  padding-left: 2.08333vw;
-}
-
-.input-bottomblack::-ms-input-placeholder {
-  padding-left: 2.08333vw;
-}
-
-.input-bottomblack::placeholder {
-  padding-left: 2.08333vw;
 }
 
 /*** Button Classes ***/
@@ -134,6 +119,15 @@ button {
 
 button:focus {
   outline: 0;
+}
+
+/*** Textarea class ***/
+.textarea-bottomblack {
+  padding-left: 2.86458vw;
+  margin-left: 0;
+  margin-bottom: 1.04167vw;
+  border: 1px solid #CCCCCC;
+  border-radius: 1.5625vw;
 }
 
 /********************
@@ -147,24 +141,57 @@ button:focus {
 }
 
 .main-header .divheading {
+  height: 4.6875vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 3rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 8.33333vw;
+  padding-right: 9.375vw;
+}
+
+.main-header .divheading .add-vendor-button {
+  font-size: 1.09375vw;
+  font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+  width: 12.5vw;
+  height: 3.125vw;
+  border: transparent;
+  background-color: #FF5757;
+  color: white;
+  float: left;
+  border-radius: 1.5625vw;
+  text-transform: capitalize;
+}
+
+.main-header .divheading img {
+  width: 1.66667vw;
+  height: 1.51042vw;
+  margin-left: 1.5625vw;
+  background-color: #FAFAFA;
+  border-radius: 1.5625vw;
 }
 
 .main-header .divheading h4 {
-  margin-left: 7.34375vw;
   font-family: AvenirLTStd-Black, sans-serif, Helvetica;
   font-weight: bold;
   font-size: 1.45833vw;
   color: #000000;
+}
+
+.main-header .add-vendor-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /********************
@@ -424,6 +451,30 @@ button:focus {
   margin-right: 3.125vw;
 }
 
+.vendordetail-table-container {
+  text-align: center;
+}
+
+.vendordetail-table-container .first-row {
+  background-color: #FF5757;
+}
+
+.vendordetail-table-container .first-row th {
+  font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+  font-size: 1.09375vw;
+  color: white;
+  width: 85.3125vw;
+  height: 4.16667vw;
+}
+
+.vendordetail-table-container .second-row td {
+  font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
+  background-color: #FAFAFA;
+  font-size: 1.09375vw;
+  width: 85.3125vw;
+  height: 4.16667vw;
+}
+
 /*========================================================
 
                 Vendor List scss
@@ -485,7 +536,7 @@ button:focus {
   margin-left: auto;
 }
 
-.table-container .vendor-search img {
+.table-container .username-login-form-group img {
   position: absolute;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -560,7 +611,7 @@ button:focus {
 .save-button {
   font-size: 1.09375vw;
   font-family: AvenirLTStd-Medium, sans-serif, Helvetica;
-  margin-top: 5.72917vw;
+  margin-top: 10.9375vw;
   width: 12.5vw;
   height: 3.125vw;
   border: transparent;
